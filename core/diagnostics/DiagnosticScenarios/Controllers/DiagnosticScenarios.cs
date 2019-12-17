@@ -1,10 +1,10 @@
 using System;
-using System.Diagnostics;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
 
 namespace testwebapi.Controllers
 {
@@ -12,8 +12,8 @@ namespace testwebapi.Controllers
     [ApiController]
     public class DiagScenarioController : ControllerBase
     {
-        object o1 = new object();
-        object o2 = new object();
+        private object _o1 = new object();
+        private object _o2 = new object();
 
         private static Processor p = new Processor();
 
@@ -28,14 +28,14 @@ namespace testwebapi.Controllers
             Thread.Sleep(5000);
 
             var threads = new Thread[300];
-            for(int i = 0; i < 300; i++)
+            for (int i = 0; i < 300; i++)
             {
                 (threads[i] = new Thread(() => {
-                    lock (o1) {Thread.Sleep(100);}
+                    lock (_o1) {Thread.Sleep(100);}
                 })).Start();
             }
 
-            foreach(Thread thread in threads)
+            foreach (Thread thread in threads)
             {
                 thread.Join();
             }
@@ -45,14 +45,14 @@ namespace testwebapi.Controllers
 
         private void DeadlockFunc()
         {
-            lock (o1)
+            lock (_o1)
             {
                 (new Thread(() => {
-                    lock (o2) { Monitor.Enter(o1); }
+                    lock (_o2) { Monitor.Enter(_o1); }
                 })).Start();
 
                 Thread.Sleep(2000);
-                Monitor.Enter(o2);
+                Monitor.Enter(_o2);
             }
         }
 
@@ -63,16 +63,16 @@ namespace testwebapi.Controllers
             var watch = new Stopwatch();
             watch.Start();
 
-            while(true)
+            while (true)
             {
                 p = new Processor();
                 watch.Stop();
-                if(watch.ElapsedMilliseconds > seconds*1000)
+                if (watch.ElapsedMilliseconds > seconds * 1000)
                     break;
                 watch.Start();
 
                 int it = (2000 * 1000);
-                for(int i = 0; i < it; i++)
+                for (int i = 0; i < it; i++)
                 {
                     p.ProcessTransaction(new Customer(Guid.NewGuid().ToString()));
                 }
@@ -97,7 +97,7 @@ namespace testwebapi.Controllers
         public ActionResult<string> memleak(int kb)
         {
             int it = (kb * 1000) / 100;
-            for(int i = 0; i < it; i++)
+            for (int i = 0; i < it; i++)
             {
                 p.ProcessTransaction(new Customer(Guid.NewGuid().ToString()));
             }
@@ -123,7 +123,7 @@ namespace testwebapi.Controllers
             while (true)
             {
                  watch.Stop();
-                 if(watch.ElapsedMilliseconds > milliseconds)
+                 if (watch.ElapsedMilliseconds > milliseconds)
                      break;
                  watch.Start();
             }
@@ -134,31 +134,31 @@ namespace testwebapi.Controllers
 
     class Customer
     {
-        private string id;
+        private string _id;
 
         public Customer(string id)
         {
-            this.id = id;
+            _id = id;
         }
     }
 
     class CustomerCache
     {
-        private List<Customer> cache = new List<Customer>();
+        private List<Customer> _cache = new List<Customer>();
 
         public void AddCustomer(Customer c)
         {
-            cache.Add(c);
+            _cache.Add(c);
         }
     }
 
     class Processor
     {
-        private CustomerCache cache = new CustomerCache();
+        private CustomerCache _cache = new CustomerCache();
 
         public void ProcessTransaction(Customer customer)
         {
-            cache.AddCustomer(customer);
+            _cache.AddCustomer(customer);
         }
     }
 }
