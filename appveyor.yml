@@ -14,14 +14,6 @@ build_script:
   #- ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
   #- ps: dotnet build framework/docker/MVCRandomAnswerGenerator/MVCRandomAnswerGenerator
   #- ps: dotnet build snippets/core/deploying/xml
-  #- ps: dotnet build snippets/csharp/programming-guide/nullable-types
-  - ps: dotnet build snippets/csharp/programming-guide/ref-returns
-  - ps: dotnet build snippets/csharp/programming-guide/strings
-  - ps: dotnet build snippets/csharp/tour/arrays
-  - ps: dotnet build snippets/csharp/tour/attributes
-  - ps: dotnet build snippets/csharp/tour/classes-and-objects
-  - ps: dotnet build snippets/csharp/tour/delegates
-  - ps: dotnet build snippets/csharp/tour/enums
   - ps: dotnet build snippets/csharp/tour/hello
   - ps: dotnet build snippets/csharp/tour/interfaces
   - ps: dotnet build snippets/csharp/tour/program-structure
