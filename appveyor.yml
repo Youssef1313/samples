@@ -2315,8 +2315,8 @@ build_script:
   #- ps: dotnet build snippets/xml/VS_Snippets_Misc/astoria_linq_provider/linqproviderclientcs
   #- ps: dotnet build snippets/xml/VS_Snippets_Misc/astoria_northwind_service/astoriasnippetscs
   #- ps: dotnet build snippets/xml/VS_Snippets_Misc/astoria_reflection_provider/customdataserviceclient
-  - ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSample
-  - ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSampleNative
+  #- ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSample
+  #- ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSampleNative
   - ps: dotnet build csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport
   - ps: dotnet build csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport
   - ps: dotnet build snippets/csharp/api/system/environment/getenvironmentvariables
