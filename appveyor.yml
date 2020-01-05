@@ -36,7 +36,7 @@ build_script:
   #- ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria linq provider/linqproviderclientcs
   #- ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria reflection provider/customdataserviceclient
   #- ps: dotnet build snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp
-  - ps: dotnet build snippets/csharp/api/system/span
+  #- ps: dotnet build snippets/csharp/api/system/span
   - ps: dotnet build snippets/csharp/how-to/safelycast/asandis
   - ps: dotnet build snippets/csharp/how-to/safelycast/nullablepatternmatching
   - ps: dotnet build snippets/csharp/how-to/safelycast/patternmatching
@@ -46,20 +46,20 @@ build_script:
   - ps: dotnet build snippets/csharp/programming-guide/string-to-number/convert
   - ps: dotnet build snippets/csharp/programming-guide/string-to-number/parse-tryparse
   - ps: dotnet build snippets/csharp/programming-guide/string-to-number/parse-tryparse2
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteNonQueryForm/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteReaderAsync/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteReaderAsyncBehavior/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteXmlReaderAsync/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS
-  - ps: dotnet build snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs
-  - ps: dotnet build snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs
-  - ps: dotnet build snippets/csharp/VS_Snippets_CFX/cfx_contentcorrelation/cs
-  - ps: dotnet build snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs
-  - ps: dotnet build snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteNonQueryForm/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteReaderAsync/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteReaderAsyncBehavior/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.BeginExecuteXmlReaderAsync/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_CFX/cfx_contentcorrelation/cs"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs"
+  - ps: dotnet build "snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs"
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/clientproxycodesample/cs
