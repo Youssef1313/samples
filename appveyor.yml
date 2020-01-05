@@ -16,7 +16,7 @@ build_script:
   - ps: dotnet build core/console-apps/FibonacciBetterMsBuild
   - ps: dotnet build core/console-apps/HelloMsBuild
   - ps: dotnet build core/extensions/DllMapDemo
-  - ps: dotnet build core/extensions/ExcelDemo
+  #- ps: dotnet build core/extensions/ExcelDemo
   - ps: dotnet build core/extensions/VisioDemo
   - ps: dotnet build core/linker/HelloWorldTrimmed
   - ps: dotnet build core/linker/TrimmedWithAdditionalRoots
