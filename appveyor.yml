@@ -21,9 +21,7 @@ build_script:
   #- ps: dotnet build core/getting-started/golden/src/app
   #- ps: dotnet build core/getting-started/golden/src/library
   #- ps: dotnet build core/getting-started/golden/test/test-library
-  - ps: dotnet build core/hosting/HostWithCoreClrHost/src/ManagedLibrary
-  - ps: dotnet build core/hosting/HostWithHostFxr/src/DotNetLib
-  - ps: dotnet build core/hosting/HostWithHostFxr/src/NativeHost
+  #- ps: dotnet build core/hosting/HostWithHostFxr/src/NativeHost
   - ps: dotnet build core/tutorials/using-on-mac-vs-full-solution/WordCounter/TestLibrary
   - ps: dotnet build core/tutorials/using-on-mac-vs-full-solution/WordCounter/TextUtils
   - ps: dotnet build core/tutorials/using-on-mac-vs-full-solution/WordCounter/WordCounterApp
