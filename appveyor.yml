@@ -59,8 +59,8 @@ build_script:
   #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsApp
   #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsForm
   - ps: dotnet build windowsforms/matching-game/MatchingGame
-  - ps: dotnet build windowsforms/MSIX-WindowsForms/CoreWinFormsApp1
-  - ps: dotnet build windowsforms/MSIX-WindowsForms/WindowsFormsApp1
+  #- ps: dotnet build windowsforms/MSIX-WindowsForms/CoreWinFormsApp1
+  #- ps: dotnet build windowsforms/MSIX-WindowsForms/WindowsFormsApp1
   - ps: dotnet build winforms/formatting-utility/cs
   - ps: dotnet build winforms/formatting-utility/vb
   - ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldCore
