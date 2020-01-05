@@ -66,7 +66,7 @@ build_script:
   - ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldCore
   #- ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldNetFx
   - ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-Core
-  - ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
+  #- ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
   - ps: dotnet build core/extensions/AppWithPlugin/AppWithPlugin
   - ps: dotnet build core/extensions/AppWithPlugin/FrenchPlugin
   - ps: dotnet build core/extensions/AppWithPlugin/HelloPlugin
