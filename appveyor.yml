@@ -2317,24 +2317,7 @@ build_script:
   #- ps: dotnet build snippets/xml/VS_Snippets_Misc/astoria_reflection_provider/customdataserviceclient
   #- ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSample
   #- ps: dotnet build core/interop/pinvoke/marshaling/src/MarshalingSampleNative
-  - ps: dotnet build csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport
-  - ps: dotnet build csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport
-  - ps: dotnet build snippets/csharp/api/system/environment/getenvironmentvariables
-  - ps: dotnet build snippets/csharp/api/system/span/slice
-  - ps: dotnet build snippets/csharp/api/system/span/slice2
-  - ps: dotnet build snippets/csharp/api/system/span.enumerator/nosync
-  - ps: dotnet build snippets/csharp/api/system/span.enumerator/sync
-  - ps: dotnet build snippets/csharp/api/system/string/copy
-  - ps: dotnet build snippets/csharp/api/system.globalization/japanesecalendar/todatetime
-  - ps: dotnet build snippets/csharp/api/system.io/path/combine
-  - ps: dotnet build snippets/csharp/api/system.io/path/combine2
-  - ps: dotnet build snippets/csharp/api/system.io/path/combine3
-  - ps: dotnet build snippets/csharp/api/system.io/path/directoryseparatorchar
-  - ps: dotnet build snippets/csharp/api/system.io/path/getfullpath
-  - ps: dotnet build snippets/csharp/api/system.io/path/ispathrooted
-  - ps: dotnet build snippets/csharp/api/system.io/path/tryjoin
-  - ps: dotnet build snippets/csharp/api/system.xml.linq/xnode/readfrom
-  - ps: dotnet build snippets/csharp/language-reference/keywords/async/wpf
+  #- ps: dotnet build snippets/csharp/language-reference/keywords/async/wpf
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/activitylibrary1
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/workflowconsoleapplication1
   - ps: dotnet build snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/client
