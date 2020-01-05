@@ -29,9 +29,7 @@ build_script:
   #- ps: dotnet build framework/libraries/migrate-library-csproj-keep-existing/src/Car.Net45
   #- ps: dotnet build framework/libraries/migrate-library-csproj-keep-existing/tests/Car.Tests
   #- ps: dotnet build framework/libraries/migrate-library-csproj-keep-existing/tests/Car.Tests.Net45
-  - ps: dotnet build framework/libraries/net40-library/src/Library
-  - ps: dotnet build framework/libraries/net45-compat-library/src/Library
-  - ps: dotnet build framework/libraries/pcl-library/src/Library
+  #- ps: dotnet build framework/libraries/pcl-library/src/Library
   - ps: dotnet build snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/cs2
   - ps: dotnet build snippets/core/whats-new/whats-new-in-30/cs
   - ps: dotnet build snippets/cpp/VS_Snippets_Data/edm_example_model/edm_example_model
