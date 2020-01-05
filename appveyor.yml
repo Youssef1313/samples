@@ -1,7 +1,6 @@
 os: Visual Studio 2019
 build_script:
   - ps: dotnet --version
-  - ps: dotnet build core/json
   - ps: dotnet build csharp/branches-quickstart
   - ps: dotnet build csharp/classes-quickstart
   - ps: dotnet build csharp/delegates-and-events
