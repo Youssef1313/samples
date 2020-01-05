@@ -53,11 +53,11 @@ build_script:
   - ps: dotnet build snippets/visualbasic/System.DateTime
   - ps: dotnet build windowsforms/datagridview/CSWinFormDataGridView
   - ps: dotnet build windowsforms/graphics/WinFormGraphics
-  - ps: dotnet build windowsforms/helloworld-links/FullFxApp
-  - ps: dotnet build windowsforms/helloworld-links/NetCore3App
-  - ps: dotnet build windowsforms/helloworld-sharedsource/CoreWindowsFormsApp
-  - ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsApp
-  - ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsForm
+  #- ps: dotnet build windowsforms/helloworld-links/FullFxApp
+  #- ps: dotnet build windowsforms/helloworld-links/NetCore3App
+  #- ps: dotnet build windowsforms/helloworld-sharedsource/CoreWindowsFormsApp
+  #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsApp
+  #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsForm
   - ps: dotnet build windowsforms/matching-game/MatchingGame
   - ps: dotnet build windowsforms/MSIX-WindowsForms/CoreWinFormsApp1
   - ps: dotnet build windowsforms/MSIX-WindowsForms/WindowsFormsApp1
