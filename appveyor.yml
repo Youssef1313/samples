@@ -14,18 +14,6 @@ build_script:
   #- ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
   #- ps: dotnet build framework/docker/MVCRandomAnswerGenerator/MVCRandomAnswerGenerator
   #- ps: dotnet build snippets/core/deploying/xml
-  - ps: dotnet build snippets/csharp/tour/hello
-  - ps: dotnet build snippets/csharp/tour/interfaces
-  - ps: dotnet build snippets/csharp/tour/program-structure
-  - ps: dotnet build snippets/csharp/tour/statements
-  - ps: dotnet build snippets/csharp/tour/structs
-  - ps: dotnet build snippets/csharp/tour/types-and-variables
-  - ps: dotnet build snippets/csharp/tour-of-async/AsyncBreakfast-final
-  - ps: dotnet build snippets/csharp/tour-of-async/AsyncBreakfast-starter
-  - ps: dotnet build snippets/csharp/tour-of-async/AsyncBreakfast-V2
-  - ps: dotnet build snippets/csharp/tour-of-async/AsyncBreakfast-V3
-  - ps: dotnet build snippets/csharp/tuples
-  - ps: dotnet build snippets/csharp/tutorials/attributes
   - ps: dotnet build snippets/csharp/tutorials/string-interpolation
   - ps: dotnet build snippets/csharp/VS_Snippets_CLR/FieldBuilder_Class_Name
   - ps: dotnet build snippets/csharp/VS_Snippets_Wpf/StringReaderWriter
