@@ -31,12 +31,11 @@ build_script:
   #- ps: dotnet build framework/libraries/migrate-library-csproj-keep-existing/tests/Car.Tests.Net45
   #- ps: dotnet build framework/libraries/pcl-library/src/Library
   #- ps: dotnet build snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/cs2
-  - ps: dotnet build snippets/core/whats-new/whats-new-in-30/cs
-  - ps: dotnet build snippets/cpp/VS_Snippets_Data/edm_example_model/edm_example_model
-  - ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria custom feeds/custom feed client
-  - ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria linq provider/linqproviderclientcs
-  - ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria reflection provider/customdataserviceclient
-  - ps: dotnet build snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp
+  #- ps: dotnet build snippets/cpp/VS_Snippets_Data/edm_example_model/edm_example_model
+  #- ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria custom feeds/custom feed client
+  #- ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria linq provider/linqproviderclientcs
+  #- ps: dotnet build snippets/cpp/VS_Snippets_Misc/astoria reflection provider/customdataserviceclient
+  #- ps: dotnet build snippets/cpp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/cpp
   - ps: dotnet build snippets/csharp/api/system/span
   - ps: dotnet build snippets/csharp/how-to/safelycast/asandis
   - ps: dotnet build snippets/csharp/how-to/safelycast/nullablepatternmatching
