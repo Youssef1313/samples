@@ -1,136 +1,18 @@
 os: Visual Studio 2019
 build_script:
   - ps: dotnet --version
-  - ps: dotnet build csharp/branches-quickstart
-  - ps: dotnet build csharp/classes-quickstart
-  - ps: dotnet build csharp/delegates-and-events
-  - ps: dotnet build csharp/events
-  - ps: dotnet build csharp/expression-trees
-  - ps: dotnet build csharp/indexers
-  - ps: dotnet build csharp/iterators
-  - ps: dotnet build csharp/list-quickstart
-  - ps: dotnet build csharp/numbers-quickstart
-  - ps: dotnet build csharp/PatternMatching
-  - ps: dotnet build csharp/serialization
-  - ps: dotnet build core/console-apps/fibonacci-msbuild
-  - ps: dotnet build core/console-apps/FibonacciBetterMsBuild
-  - ps: dotnet build core/console-apps/HelloMsBuild
-  - ps: dotnet build core/extensions/DllMapDemo
   #- ps: dotnet build core/extensions/ExcelDemo
   #- ps: dotnet build core/extensions/VisioDemo
-  - ps: dotnet build core/linker/HelloWorldTrimmed
-  - ps: dotnet build core/linker/TrimmedWithAdditionalRoots
-  - ps: dotnet build csharp/getting-started/console-linq
-  - ps: dotnet build csharp/getting-started/console-teleprompter
-  - ps: dotnet build csharp/getting-started/console-webapiclient
-  - ps: dotnet build csharp/language-reference/operators
-  - ps: dotnet build csharp/NullableIntroduction/NullableIntroduction
-  - ps: dotnet build csharp/roslyn-sdk/SemanticQuickStart
-  - ps: dotnet build csharp/safe-efficient-code/benchmark
-  - ps: dotnet build csharp/safe-efficient-code/ref-readonly-struct
-  - ps: dotnet build csharp/tutorials/RangesIndexes
-  - ps: dotnet build csharp/unit-testing-best-practices/after
-  - ps: dotnet build csharp/unit-testing-best-practices/before
-  - ps: dotnet build csharp/unit-testing-best-practices/unit-testing-best-practices
-  - ps: dotnet build csharp/versioning/new
-  - ps: dotnet build csharp/versioning/override
-  - ps: dotnet build machine-learning/tutorials/GitHubIssueClassification
-  - ps: dotnet build machine-learning/tutorials/IrisFlowerClustering
-  - ps: dotnet build machine-learning/tutorials/MovieRecommendation
-  - ps: dotnet build machine-learning/tutorials/ProductSalesAnomalyDetection
-  - ps: dotnet build machine-learning/tutorials/SentimentAnalysis
-  - ps: dotnet build machine-learning/tutorials/TaxiFarePrediction
-  - ps: dotnet build machine-learning/tutorials/TextClassificationTF
-  - ps: dotnet build machine-learning/tutorials/TransferLearningTF
-  - ps: dotnet build snippets/csharp/attributes
-  - ps: dotnet build snippets/csharp/keywords
-  - ps: dotnet build snippets/csharp/main-arguments
-  - ps: dotnet build snippets/csharp/new-in-6
-  - ps: dotnet build snippets/csharp/new-in-7
-  - ps: dotnet build snippets/csharp/properties
-  - ps: dotnet build snippets/csharp/System.DateTime
-  - ps: dotnet build snippets/csharp/xunit-test
-  - ps: dotnet build snippets/visualbasic/System.DateTime
-  - ps: dotnet build windowsforms/datagridview/CSWinFormDataGridView
-  - ps: dotnet build windowsforms/graphics/WinFormGraphics
   #- ps: dotnet build windowsforms/helloworld-links/FullFxApp
   #- ps: dotnet build windowsforms/helloworld-links/NetCore3App
   #- ps: dotnet build windowsforms/helloworld-sharedsource/CoreWindowsFormsApp
   #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsApp
   #- ps: dotnet build windowsforms/helloworld-sharedsource/WindowsFormsForm
-  - ps: dotnet build windowsforms/matching-game/MatchingGame
   #- ps: dotnet build windowsforms/MSIX-WindowsForms/CoreWinFormsApp1
   #- ps: dotnet build windowsforms/MSIX-WindowsForms/WindowsFormsApp1
-  - ps: dotnet build winforms/formatting-utility/cs
-  - ps: dotnet build winforms/formatting-utility/vb
-  - ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldCore
   #- ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldNetFx
-  - ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-Core
   #- ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
-  - ps: dotnet build core/extensions/AppWithPlugin/AppWithPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/FrenchPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/HelloPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/JsonPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/OldJsonPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/PluginBase
-  - ps: dotnet build core/extensions/AppWithPlugin/UVPlugin
-  - ps: dotnet build core/extensions/AppWithPlugin/XcopyablePlugin
-  - ps: dotnet build core/extensions/COMServerDemo/COMClient
-  - ps: dotnet build core/extensions/COMServerDemo/COMServer
-  - ps: dotnet build core/extensions/NetComSxS/Client
-  - ps: dotnet build core/extensions/NetComSxS/Contracts
-  - ps: dotnet build core/extensions/NetComSxS/Server
-  - ps: dotnet build core/getting-started/golden/app
-  - ps: dotnet build core/getting-started/golden/library
-  - ps: dotnet build core/getting-started/golden/test-library
-  - ps: dotnet build core/getting-started/unit-testing-using-dotnet-test/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-using-mstest/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-using-mstest/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-using-nunit/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-using-nunit/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-vb-dotnet-test/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-vb-dotnet-test/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-vb-mstest/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-vb-mstest/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-vb-nunit/PrimeService
-  - ps: dotnet build core/getting-started/unit-testing-vb-nunit/PrimeService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp/MathService
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp/MathService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp-mstest/MathService
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp-mstest/MathService.Tests
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp-nunit/MathService
-  - ps: dotnet build core/getting-started/unit-testing-with-fsharp-nunit/MathService.Tests
-  - ps: dotnet build core/linq/csharp/aggregate
-  - ps: dotnet build core/linq/csharp/concatenation
-  - ps: dotnet build core/linq/csharp/conversion
-  - ps: dotnet build core/linq/csharp/customsequence
-  - ps: dotnet build core/linq/csharp/element
-  - ps: dotnet build core/linq/csharp/equality
-  - ps: dotnet build core/linq/csharp/generation
-  - ps: dotnet build core/linq/csharp/grouping
-  - ps: dotnet build core/linq/csharp/join
-  - ps: dotnet build core/linq/csharp/ordering
-  - ps: dotnet build core/linq/csharp/partitioning
-  - ps: dotnet build core/linq/csharp/projection
-  - ps: dotnet build core/linq/csharp/quantifier
-  - ps: dotnet build core/linq/csharp/queryexecution
-  - ps: dotnet build core/linq/csharp/restriction
-  - ps: dotnet build core/linq/csharp/setoperators
-  - ps: dotnet build core/tutorials/Unloading/Host
-  - ps: dotnet build core/tutorials/Unloading/Interface
-  - ps: dotnet build core/tutorials/Unloading/Plugin
-  - ps: dotnet build core/tutorials/Unloading/PluginDependency
-  - ps: dotnet build core/whats-new/whats-new-in-21/cs
-  - ps: dotnet build core/whats-new/whats-new-in-21/vb
-  - ps: dotnet build csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree
-  - ps: dotnet build csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker
-  - ps: dotnet build csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS
-  - ps: dotnet build csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS
-  - ps: dotnet build csharp/tutorials/exploration/csharp6-finished
-  - ps: dotnet build csharp/tutorials/exploration/csharp6-starter
-  - ps: dotnet build framework/docker/ConsoleRandomAnswerGenerator/ConsoleRandomAnswerGenerator
-  - ps: dotnet build framework/docker/MVCRandomAnswerGenerator/MVCRandomAnswerGenerator
+  #- ps: dotnet build framework/docker/MVCRandomAnswerGenerator/MVCRandomAnswerGenerator
   - ps: dotnet build snippets/core/deploying/xml
   - ps: dotnet build snippets/csharp/how-to/conversions
   - ps: dotnet build snippets/csharp/how-to/strings
