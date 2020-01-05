@@ -16,10 +16,8 @@ build_script:
   #- ps: dotnet build snippets/core/deploying/xml
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/StringReaderWriter
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/TextFiles
-  - ps: dotnet build snippets/visualbasic/how-to/conversions
-  - ps: dotnet build snippets/visualbasic/VS_Snippets_CLR/FieldBuilder_Class_Name
-  - ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter
-  - ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/TextFiles
+  #- ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter
+  #- ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/TextFiles
   - ps: dotnet build core/console-apps/NewTypesMsBuild/src/NewTypes
   - ps: dotnet build core/console-apps/NewTypesMsBuild/test/NewTypesTests
   - ps: dotnet build core/getting-started/golden/src/app
