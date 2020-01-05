@@ -1275,13 +1275,6 @@ build_script:
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp
-  - ps: dotnet build snippets/standard/buffers/memory-t/owner
-  - ps: dotnet build snippets/standard/buffers/memory-t/owner-using
-  - ps: dotnet build snippets/standard/buffers/memory-t/ownerless
-  - ps: dotnet build snippets/standard/buffers/memory-t/task-returning
-  - ps: dotnet build snippets/standard/buffers/memory-t/task-returning2
-  - ps: dotnet build snippets/standard/buffers/memory-t/void-returning
-  - ps: dotnet build snippets/standard/buffers/memory-t/void-returning-async
   - ps: dotnet build snippets/standard/io/io-exceptions/cs
   - ps: dotnet build snippets/standard/io/io-exceptions/vb
   - ps: dotnet build snippets/standard/serialization/is-serializable/csharp
