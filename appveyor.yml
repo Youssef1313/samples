@@ -13,7 +13,7 @@ build_script:
   #- ps: dotnet build wpf/HelloWorld-WithLinkedFiles/HelloWorldNetFx
   #- ps: dotnet build wpf/WPF-WinRT/WPF-WinRT-NetFx
   #- ps: dotnet build framework/docker/MVCRandomAnswerGenerator/MVCRandomAnswerGenerator
-  - ps: dotnet build snippets/core/deploying/xml
+  #- ps: dotnet build snippets/core/deploying/xml
   - ps: dotnet build snippets/csharp/how-to/conversions
   - ps: dotnet build snippets/csharp/how-to/strings
   - ps: dotnet build snippets/csharp/language-reference/tokens
