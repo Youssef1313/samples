@@ -18,11 +18,9 @@ build_script:
   #- ps: dotnet build snippets/csharp/VS_Snippets_Wpf/TextFiles
   #- ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter
   #- ps: dotnet build snippets/visualbasic/VS_Snippets_Wpf/TextFiles
-  - ps: dotnet build core/console-apps/NewTypesMsBuild/src/NewTypes
-  - ps: dotnet build core/console-apps/NewTypesMsBuild/test/NewTypesTests
-  - ps: dotnet build core/getting-started/golden/src/app
-  - ps: dotnet build core/getting-started/golden/src/library
-  - ps: dotnet build core/getting-started/golden/test/test-library
+  #- ps: dotnet build core/getting-started/golden/src/app
+  #- ps: dotnet build core/getting-started/golden/src/library
+  #- ps: dotnet build core/getting-started/golden/test/test-library
   - ps: dotnet build core/hosting/HostWithCoreClrHost/src/ManagedLibrary
   - ps: dotnet build core/hosting/HostWithHostFxr/src/DotNetLib
   - ps: dotnet build core/hosting/HostWithHostFxr/src/NativeHost
