@@ -7,26 +7,25 @@ Imports System.Windows.Forms
 Public Class Form1
     Inherits System.Windows.Forms.Form
     Private WithEvents printButton As System.Windows.Forms.Button
-    Private printFont As Font
-    Private streamToPrint As StreamReader
+    Private _printFont As Font
+    Private _streamToPrint As StreamReader
 
     Public Sub New()
         ' The Windows Forms Designer requires the following call.
         InitializeComponent()
-        InitializeForm()
     End Sub
 
     ' The Click event is raised when the user clicks the Print button.
     Private Sub printButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles printButton.Click
         Try
-            streamToPrint = New StreamReader("C:\My Documents\MyFile.txt")
+            _streamToPrint = New StreamReader("C:\My Documents\MyFile.txt")
             Try
-                printFont = New Font("Arial", 10)
+                _printFont = New Font("Arial", 10)
                 Dim pd As New PrintDocument()
                 AddHandler pd.PrintPage, AddressOf Me.pd_PrintPage
                 pd.Print()
             Finally
-                streamToPrint.Close()
+                _streamToPrint.Close()
             End Try
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -43,28 +42,24 @@ Public Class Form1
         Dim line As String = Nothing
 
         ' Calculate the number of lines per page.
-        linesPerPage = ev.MarginBounds.Height / printFont.GetHeight(ev.Graphics)
+        linesPerPage = ev.MarginBounds.Height / _printFont.GetHeight(ev.Graphics)
 
         ' Print each line of the file.
         While count < linesPerPage
-            line = streamToPrint.ReadLine()
+            line = _streamToPrint.ReadLine()
             If line Is Nothing Then
                 Exit While
             End If
-            yPos = topMargin + count * printFont.GetHeight(ev.Graphics)
-            ev.Graphics.DrawString(line, printFont, Brushes.Black, leftMargin, yPos, New StringFormat())
+            yPos = topMargin + count * _printFont.GetHeight(ev.Graphics)
+            ev.Graphics.DrawString(line, _printFont, Brushes.Black, leftMargin, yPos, New StringFormat())
             count += 1
         End While
 
         ' If more lines exist, print another page.
-        If (line IsNot Nothing) Then
-            ev.HasMorePages = True
-        Else
-            ev.HasMorePages = False
-        End If
+        ev.HasMorePages = line IsNot Nothing
     End Sub
 
-    Private Sub InitializeForm()
+    Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.printButton = New System.Windows.Forms.Button()
 
